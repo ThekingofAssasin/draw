@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drawing App</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+  
+    canvas {
+      border: 1px solid #ccc;
+      cursor: crosshair;
+    }
+  
+    #colors {
+      margin-top: 10px;
+    }
+  
+    .color {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+    
+    .eraser {
+      display: inline-block;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <center>
+  <canvas id="canvas" width="800" height="600"></canvas>
+  
+  <div id="colors">
+    <div class="color" style="background-color: black;"></div>
+    <div class="color" style="background-color: red;"></div>
+    <div class="color" style="background-color: green;"></div>
+    <div class="color" style="background-color: blue;"></div>
+    <div class="eraser">Eraser</div>
+  </div>
+  
+  <script src="app.js"></script>
+</center>
+</body>
+</html>
